@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  We are launching soon!
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="css/fontawesome-icons/css/all.css">
 
-  Subscribe and get notified
+  </head>
+  <body>
+    <header class="mainHeader">
+      <h1 class="headerH1 clrBlack">PING<span>.</span></h1>
+      <h2 class="headerH2">We are launching <span class="clrBlack">soon!</span></h2>
+    </header>
 
-  Notify Me
+    <main>
+      <section class="mainSec">
+        <header class="mainSecHeader">
+          <h3>Subscribe and get notified</h3>
+        </header>
+        <form id="mainSecForm">
+          <label for="emailInput" class="mainSecFormLabel" id="emailInputLabel">
+            <input type="text" name="mail" id="emailInput" class="mainSecFormInput formBorder"  placeholder="Your email address...">
+            <span class="invalidInput labelHide">Please provide a valid email address</span>
+          </label>
+          <input type="submit" value="Notify Me" class="mainSecFormSubmit formBorder" id="submitBtn">
+        </form>
+        <img src="images/illustration-dashboard.png" alt="dashboard example" name="dashboard" class="mainSecImage">
+      </section>
+    </main>
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer class="mainFooter">
+      <section class="footerLogos">
+        <a href="https://it-it.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=it"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </section>
+      <section class="footerCopy">
+        <small class="copyright">&copy; Copyright Ping. All rights reserved</small>
+      </section>
+    </footer>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

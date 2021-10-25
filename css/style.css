@@ -1,0 +1,136 @@
+:root {
+    /* widths */
+    --width-mobile: 375px;
+    --width-desktop: 1440px;
+    /* fonts */
+    --fnt-size-base: 20px;
+    --fnt-family: 'Libre Franklin', sans-serif;
+    --fnt-wgt-light: 300;
+    --fnt-wgt-medium: 600;
+    --fnt-wgt-heavy: 700;
+    /* Colors - Primary*/
+    --clr-blue: hsl(223, 87%, 63%);
+    /* Colors - Secondary */
+    --clr-pale-blue: hsl(223, 100%, 88%);
+    --clr-light-red: hsl(354, 100%, 66%);
+    /* Colors - Neutral */
+    --clr-gray: hsl(0, 0%, 59%);
+    --clr-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html, body {
+    font-size: 20px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+.mainHeader {
+    height: 15%;
+
+    /* background-color: red; */
+    flex: 0 51vw;
+
+    padding: 2rem 0 0.5rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MAIN BODY */
+main {
+    height: 69%;
+
+    /* background-color: blue; */
+    flex: 0 51vw;
+}
+
+.mainSec {
+    height: 100%;
+
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FORM */
+#mainSecForm {
+    width: 100%;
+    flex-basis: 4rem;
+}
+
+.mainSecFormLabel {
+    display: inline-block;
+    width: 69%;
+    height: 70%;
+}
+
+.mainSecFormInput {
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.mainSecFormSubmit {
+    display: inline-block;
+    width: 30%;
+    height: 70%;
+}
+
+.labelHide {
+    position: absolute;
+    top: 100%;
+    right: 35%;
+
+    width: fit-content;
+    display: none;
+}
+
+.formBorder {
+    border-radius: 1.5rem;
+}
+
+/* IMAGE */
+.mainSecImage {
+    width: 100%;
+}
+
+/* FOOTER */
+.mainFooter {
+    height: 15%;
+
+    /* background-color: green; */
+    flex: 0 51vw;
+
+    /* padding: 3rem; */
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
