@@ -42,6 +42,39 @@ body {
     align-items: center;
 }
 
+/* ALERT */
+.alertMail {
+    background-color: lightblue;
+    flex: 0 51vw;
+    border-radius: 6px;
+}
+
+.alertHide {
+    display: none;
+}
+
+.alertMail p {
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.alertMail #alertDismiss {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    border: none;
+    background-color: transparent;
+}
+
+.alertMail #alertDismiss:hover {
+    cursor: pointer;
+}
+
+
+
 /* HEADER */
 .mainHeader {
     height: 15%;
@@ -117,6 +150,10 @@ main {
     color: var(--clr-gray);
 }
 
+.mainSecFormInput:focus {
+    outline: none;
+}
+
 #emailInput.invalid {
     border-color: var(--clr-light-red);
 }
@@ -133,6 +170,11 @@ main {
     font-size: 1rem;
 }
 
+.mainSecFormSubmit:hover {
+    background-color: var(--clr-pale-blue);
+    cursor: pointer;
+}
+
 .invalidInput {
     position: absolute;
     top: 110%;
@@ -147,7 +189,7 @@ main {
 }
 
 .labelHide {
-    /* display: none; */
+    display: none;
 }
 
 .formBorder {

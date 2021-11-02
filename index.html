@@ -19,6 +19,10 @@
 
   </head>
   <body>
+    <div class="alertMail alertHide" id="alert">
+      <p>Email correctly submitted</p>
+      <button id="alertDismiss"><i class="fas fa-times"></i></button>
+    </div>
     <header class="mainHeader">
       <h1 class="headerH1">PING<span class="clrBlue">.</span></h1>
       <h2 class="headerH2">We are launching <span class="clrBlack">soon!</span></h2>
@@ -31,8 +35,8 @@
         </header>
         <form id="mainSecForm">
           <label for="emailInput" class="mainSecFormLabel" id="emailInputLabel">
-            <input type="text" name="mail" id="emailInput" class="mainSecFormInput formBorder invalid"  placeholder="Your email address...">
-            <span class="invalidInput labelHide invalid">Please provide a valid email address</span>
+            <input type="text" name="mail" id="emailInput" class="mainSecFormInput formBorder"  placeholder="Your email address...">
+            <span class="labelHide" id="invalidInputMessage">Please provide a valid email address</span>
           </label>
           <input type="submit" value="Notify Me" class="mainSecFormSubmit formBorder" id="submitBtn">
         </form>
